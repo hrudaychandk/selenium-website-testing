@@ -19,6 +19,8 @@ public class UserAuthenticationTest {
     public void userAuthenticationTest() {
         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("headless");
+        chromeOptions.addArguments("--no-sandbox");
         WebDriver driver = new ChromeDriver(chromeOptions);
         // Opens a website hosted on below machine
         //driver.get("https://localhost:3001");
