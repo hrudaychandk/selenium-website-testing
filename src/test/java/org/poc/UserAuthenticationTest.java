@@ -36,7 +36,7 @@ public class UserAuthenticationTest {
         // Find the submit button and click to authenticate the user
         driver.findElement(By.name("click")).click();
         //Access alert
-        System.out.println(driver.switchTo().alert().getText());
+        driver.findElement(By.className("alert alert-dismissible alert-success")).getText();
         //Quit the driver
         driver.quit();
     }
