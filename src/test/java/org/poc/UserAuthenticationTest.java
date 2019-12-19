@@ -32,6 +32,7 @@ public class UserAuthenticationTest {
         // Find the submit button and click to authenticate the user
         driver.findElement(By.id("u_0_2")).click();
         // TODO: Assert
+
     }
 
     @AfterTest
