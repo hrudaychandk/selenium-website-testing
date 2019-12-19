@@ -18,7 +18,7 @@ public class UserAuthenticationTest {
 
     @Test(groups = "web")
     public void userAuthenticationTest() {
-        System.setProperty("webdriver.chrome.driver", "usr/bin/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         ChromeOptions chromeOptions = new ChromeOptions();
         WebDriver driver = new ChromeDriver(chromeOptions);
         // Opens a website hosted on below machine
